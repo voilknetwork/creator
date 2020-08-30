@@ -1,0 +1,51 @@
+{
+  "name": "front-end",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "voilk": "^0.7.15",
+    "apollo-boost": "^0.4.3",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "graphql": "^14.3.1",
+    "graphql-tag": "^2.10.1",
+    "history": "^4.9.0",
+    "isomorphic-fetch": "^2.2.1",
+    "path": "^0.12.7",
+    "pdfmake": "^0.1.57",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.8.1",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.8",
+    "react-dom": "^16.8.6",
+    "react-notification-alert": "^0.0.12",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-select": "^3.0.4",
+    "reactstrap": "^8.0.0",
+    "universal-cookie": "^4.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "startp": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
