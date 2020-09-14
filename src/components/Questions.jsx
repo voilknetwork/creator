@@ -21,12 +21,26 @@ class Questions extends Component {
 
                 <section class="section">
                     <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 mb30">
+                                <div class="faqs-template">
+                                    <div class="panel-group" id="accordion">
+                                    {faq.map((f, index) => {
+                                        console.log(index)
+                                        return (<Question question={f} index={index}/>)
+                                    } )}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row contactv2 text-center">
                             <div class="col-md-4">
                                 <div class="small-box">
                                     <i class="flaticon-chat"></i>
                                     <h4>Chat Group</h4>
-                                    <p><a href="https://discord.gg/UXyvVbQ">voilk Discord</a></p>
+                                    <p><a href="https://discord.gg/QNryJsJ">voilk Discord</a></p>
                                 </div>
                             </div>
 
@@ -46,24 +60,10 @@ class Questions extends Component {
                                 </div> 
                             </div>
                         </div>
-
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 mb30">
-                                <div class="faqs-template">
-                                    <div class="panel-group" id="accordion">
-                                    {faq.map((f, index) => {
-                                        console.log(index)
-                                        return (<Question question={f} index={index}/>)
-                                    } )}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="section-button clearfix text-center">
                             <h4>Your answer not here? for more answers Click below..</h4>
                             <br />
-                            <a href="https://voilk.com/chat/help" class="btn btn-transparent">Chat With Us</a>
+                            <a href="https://discord.gg/QNryJsJ" class="btn btn-transparent">Chat With Us</a>
                         </div>
                     </div>
                 </section>
