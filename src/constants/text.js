@@ -9,7 +9,7 @@ const text = {
     ],
     choose_us: [
         "What is voilk?", 
-        "Voilk is a social network with integrated banking features, which allows you to create content and share with the world! at the same time you can use the banking features to make payments."],
+        "Voilk is a social network with integrated banking features. "],
     offerings: [
         {
             title: "Social Network",
