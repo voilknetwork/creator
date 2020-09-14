@@ -34,7 +34,7 @@ class Questions extends Component {
                                 </div>
                             </div>
                         </div>
-
+                        <br/>
                         <div class="row contactv2 text-center">
                             <div class="col-md-4">
                                 <div class="small-box">
