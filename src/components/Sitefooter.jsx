@@ -55,8 +55,8 @@ class Sitefooter extends Component {
                     	<div class="widget clearfix">
                     		<h4 class="widget-title">Talk to us</h4>
                     		<ul>
-                    			<li><a href="https://facebook.com/voilk.info/">Facebook</a></li>
-                    			<li><a href="https://discord.gg/RzzRfmc">Discord</a></li>
+                    			<li><a href="https://facebook.com/voilknetwork/">Facebook</a></li>
+                    			<li><a href="https://discord.gg/QNryJsJ">Discord</a></li>
                     		</ul>
                     	</div>
                     </div>
