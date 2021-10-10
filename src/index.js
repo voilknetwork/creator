@@ -8,7 +8,7 @@ import indexRoute from "./routes/index";
 
 const hist = createBrowserHistory();
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql"
+  uri: "https://graphql.voilk.com/graphql"
 });
 ReactDOM.render(
   <ApolloProvider client={client}>

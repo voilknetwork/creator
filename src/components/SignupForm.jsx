@@ -35,7 +35,7 @@ class SignupForm extends Component {
     
     username_exists = (e) => {
         this.setState({error: "Contacting Blockchain.."});
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://graphql.voilk.com/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: '{ account(name: "'+this.state.username+'") { name } }' }),
@@ -101,7 +101,7 @@ class SignupForm extends Component {
         e.preventDefault();
         console.log("Handling Create.. ");
         this.setState({error: "Contacting Blockchain... "});
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://graphql.voilk.com/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: 'mutation {generate_token {result}}' }),
@@ -127,7 +127,7 @@ class SignupForm extends Component {
                 let tc = res.data.generate_token.result;
                 tc = Replacer.replace_array(tc);
                 
-                fetch('http://localhost:4000/graphql', {
+                fetch('https://graphql.voilk.com/graphql', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ query: '{create_account(username: "'+this.state.username+'", password: "'+this.state.password+'", referral: "'+this.state.ref+'", accesstoken: "'+tc+'"){active activePubkey posting postingPubkey owner ownerPubkey memo memoPubkey masterPassword errors }}' }),

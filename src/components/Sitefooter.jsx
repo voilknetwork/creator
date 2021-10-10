@@ -43,7 +43,7 @@ class Sitefooter extends Component {
                     	<div class="widget clearfix">
                     		<h4 class="widget-title">Tools</h4>
                     		<ul>
-                    			<li><a href="http://localhost:4000/graphql">GraphQL</a></li>
+                    			<li><a href="https://graphql.voilk.com/graphql">GraphQL</a></li>
                     			<li><a href="https://explorer.voilk.com">Blockchain Explorer</a></li>
                     			<li><a href="https://github.com/voilk">Github Repo</a></li>
 								<li><a href="https://www.voilk.com/change_password">Change Password</a></li>
