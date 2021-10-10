@@ -30,7 +30,7 @@ class LargeSearch extends Component {
         <section
           class="section transheader homepage parallax"
           data-stellar-background-ratio="0.5"
-          style= {{ 'background-image': "url('upload/bg_04.jpg')"}}
+          style= {{ 'background-image': "url('upload/bg_01.jpg')"}}
         >
           <div class="container">
           

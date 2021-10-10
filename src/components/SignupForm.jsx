@@ -12,13 +12,18 @@ require('isomorphic-fetch');
 
 
 class SignupForm extends Component {
+    generate_random_password = (prefix = 'P') => {
+        let pass = prefix + key_utils.get_random_key().toWif();
+        return pass;
+    }
     state = {
         ref: "voilk",
         error: "",
         username: "",
         inputfield: false,
         availbtn: true,
-        genbtn: true
+        genbtn: true,
+        password: this.generate_random_password()
     }
     wait = (ms) =>
     {
@@ -27,13 +32,10 @@ class SignupForm extends Component {
         do { d2 = new Date(); }
         while(d2-d < ms);
     }
-    generate_random_password = (prefix = 'P') => {
-        let pass = prefix + key_utils.get_random_key().toWif();
-        return pass;
-    }
+    
     username_exists = (e) => {
         this.setState({error: "Contacting Blockchain.."});
-        fetch('https://graphql.voilk.com/graphql', {
+        fetch('http://localhost:4000/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: '{ account(name: "'+this.state.username+'") { name } }' }),
@@ -99,10 +101,7 @@ class SignupForm extends Component {
         e.preventDefault();
         console.log("Handling Create.. ");
         this.setState({error: "Contacting Blockchain... "});
-        const pass = this.generate_random_password();
-
-        this.setState({error: "Generated Random Password..."});
-        fetch('https://graphql.voilk.com/graphql', {
+        fetch('http://localhost:4000/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: 'mutation {generate_token {result}}' }),
@@ -123,22 +122,23 @@ class SignupForm extends Component {
             }
             else{
 
-                this.setState({error: "Generating Account kindly wait 30 seconds..."});
+                this.setState({error: "Generating account kindly wait..."});
                 
                 let tc = res.data.generate_token.result;
                 tc = Replacer.replace_array(tc);
                 
-                
-                fetch('https://graphql.voilk.com/graphql', {
+                fetch('http://localhost:4000/graphql', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ query: '{create_account(username: "'+this.state.username+'", password: "'+pass+'", accesstoken: "'+tc+'"){active activePubkey posting postingPubkey owner ownerPubkey memo memoPubkey masterPassword errors }}' }),
+                    body: JSON.stringify({ query: '{create_account(username: "'+this.state.username+'", password: "'+this.state.password+'", referral: "'+this.state.ref+'", accesstoken: "'+tc+'"){active activePubkey posting postingPubkey owner ownerPubkey memo memoPubkey masterPassword errors }}' }),
                 })
                 .then(re => re.json())
                 .then(re => {
                     this.setState({error: "Generating Account..."});
+                    
                     if(re.data.create_account===null)
                     {
+
                         this.setState(
                             {
                                 error: "There was some problem Refresh and Try again!!", 
@@ -224,53 +224,15 @@ class SignupForm extends Component {
                         );
                         
                         pdfmake.createPdf(dd, null, null, fonts.pdfMake.vfs).download();
-                        this.setState({error: "Adding Referral Entry"});
-        
-                        fetch('https://graphql.voilk.com/graphql', {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ query: 'mutation {addReferral(username: "'+this.state.ref+'", referral: "'+this.state.username+'", accesstoken: "'+tc+'"){username referral}}' }),
-                        })
-                        .then(r => r.json())
-                        .then(r => {
-                            if(r.data.addReferral===null){
-                                this.setState({error: "Could not add referral entry!!"});
-                            }
-                            else
+
+                        this.setState(
                             {
-                                this.setState({error: r.data.addReferral.username + " invitation entry added " + r.data.addReferral.referral})
+                                error: "Account is Created ✅ Password: " + accountInfo.masterPassword, 
+                                availbtn: false,
+                                genbtn: false,
+                                inputfield: true
                             }
-                        });
-                        this.setState({error: "Finishing Account creation.."});
-                        this.wait(5000);
-                        fetch('https://graphql.voilk.com/graphql', {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ query: '{ account(name: "'+this.state.username+'") { name } }' }),
-                        })
-                        .then(s => s.json())
-                        .then(s => {
-                            if(s.data.account!==null)
-                            {
-                                this.setState(
-                                    {
-                                        error: "Account is Created ✅ Password: " + accountInfo.masterPassword, 
-                                        availbtn: false,
-                                        genbtn: false,
-                                        inputfield: true
-                                    }
-                                );
-                                return;
-                            }
-                            else {
-                                console.log(s.data);
-                                this.setState({
-                                    error: "There was some problem Refresh and Try again!!", 
-                                    availbtn: true, 
-                                    username: ""
-                                })
-                            }
-                        });
+                        );
                         
                     }
                 });
@@ -292,9 +254,6 @@ class SignupForm extends Component {
         }
         if (length > 16) {
             return "Account name should be shorter than 16 characters";
-        }
-        if (!/-/.test(value)) {
-            return "Account name must contain a dash (-) e.g bilal-haider";
         }
         if (Premium.list.includes(value)) {
             return "This username is purchase only!!";
@@ -356,6 +315,12 @@ class SignupForm extends Component {
                                 placeholder="type your desired username"
                                 onChange={ this.handlechange } 
                                 disabled= {this.state.inputfield} />
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                placeholder="Hit generate and password will appear here"
+                                value={this.state.password}
+                                disabled />
                             <label>{this.state.error}</label>
                             <button type="submit" onClick={this.handleavailability} class="btn btn-transparent btn-block" disabled={this.state.availbtn} >Check Availability</button>
                             <button type="submit" onClick={this.handlecreate} class="btn btn-transparent btn-block" disabled={this.state.genbtn} >Generate Account</button>

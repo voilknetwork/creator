@@ -61,7 +61,6 @@ class ChooseUs extends Component {
 							<div class="service-details">
 		<h4><a href="#" title="">{text.offerings[3].title}</a></h4>
 		<p>{text.offerings[3].info}</p>
-								<a href="https://invest.voilk.com" class="readmore">HYIP</a>
 							</div>
 						</div>
 					</div>
@@ -73,7 +72,6 @@ class ChooseUs extends Component {
 							<div class="service-details">
 		<h4><a href="#" title="">{text.offerings[4].title}</a></h4>
 								<p>{text.offerings[4].info}</p>
-								<a href="https://ads.voilk.com" class="readmore">Adverts</a>
 							</div>
 						</div>
 					</div>
@@ -85,7 +83,6 @@ class ChooseUs extends Component {
 							<div class="service-details">
 								<h4><a href="#" title="">{text.offerings[5].title}</a></h4>
 								<p>{text.offerings[5].info}</p>
-								<a href="https://explorer.voilk.com" class="readmore">Explorer</a>
 							</div>
 						</div>
 					</div>

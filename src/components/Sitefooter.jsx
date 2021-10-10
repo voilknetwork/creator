@@ -12,7 +12,7 @@ class Sitefooter extends Component {
                     	<div class="widget clearfix">
                     		<h4 class="widget-title">voilk</h4>
                     		<div class="newsletter-widget">
-                    			<p>Voilk is a social bank, which is a social network + a bank account, You can use it to talk to your friends and family, share content with the world and also use it as a payment service.</p>
+                    			<p>Voilk is a content sharing platform, where your content is rewarded.</p>
 		                        
                     		</div>
                     	</div>
@@ -31,10 +31,10 @@ class Sitefooter extends Component {
 
                     <div class="col-md-2 col-sm-2">
                     	<div class="widget clearfix">
-                    		<h4 class="widget-title">Exchange</h4>
+                    		<h4 class="widget-title">Cashier</h4>
                     		<ul>
-                    		   <li>Contact us via email to purchase</li>
-
+                    		   <li><a href="https://affiliates.voilk.com/deposit">Deposit</a></li>
+                    		   <li><a href="https://affiliates.voilk.com/withdraw">Withdraw</a></li>
                     		</ul>
                     	</div>
                     </div>
@@ -43,7 +43,7 @@ class Sitefooter extends Component {
                     	<div class="widget clearfix">
                     		<h4 class="widget-title">Tools</h4>
                     		<ul>
-                    			<li><a href="https://graphql.voilk.com/graphql">GraphQL</a></li>
+                    			<li><a href="http://localhost:4000/graphql">GraphQL</a></li>
                     			<li><a href="https://explorer.voilk.com">Blockchain Explorer</a></li>
                     			<li><a href="https://github.com/voilk">Github Repo</a></li>
 								<li><a href="https://www.voilk.com/change_password">Change Password</a></li>
@@ -55,8 +55,7 @@ class Sitefooter extends Component {
                     	<div class="widget clearfix">
                     		<h4 class="widget-title">Talk to us</h4>
                     		<ul>
-                    			<li><a href="https://facebook.com/voilknetwork/">Facebook</a></li>
-                    			<li><a href="https://discord.gg/QNryJsJ">Discord</a></li>
+                    			<li><a href="https://discord.gg/8a9w7rGnXn">Discord</a></li>
                     		</ul>
                     	</div>
                     </div>
@@ -68,13 +67,7 @@ class Sitefooter extends Component {
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                        <p>2019 &copy;<a href="/">voilk.com</a> All rights reserved.</p>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <ul class="list-inline">
-                            <li>Design Credits: <a href="https://html.design">Design</a></li>
-                        </ul>
+                        <p>2021 &copy;<a href="/">voilk.com</a> All rights reserved.</p>
                     </div>
                 </div>
             </div>

@@ -97,7 +97,7 @@ class Siteheader extends Component {
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        Explore Popular
+                        Explore
                         <span className="fa fa-angle-down" />
                       </a>
                       <ul className="dropdown-menu">
@@ -112,7 +112,7 @@ class Siteheader extends Component {
                       </ul>
                     </li>
                     <li className={matchPath(this.props.location.pathname, { path: "/affiliates" }) ? 'active' : ''}>
-                      <a href="/affiliates">affiliates</a>
+                      <a href="https://affiliates.voilk.com/signin">affiliates</a>
                     </li>
                     <li className={matchPath(this.props.location.pathname, { path: "/faq" }) ? 'active' : ''}>
                       <a href="/faq">FAQs</a>

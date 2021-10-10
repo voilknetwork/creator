@@ -40,7 +40,7 @@ class Questions extends Component {
                                 <div class="small-box">
                                     <i class="flaticon-chat"></i>
                                     <h4>Chat Group</h4>
-                                    <p><a href="https://discord.gg/QNryJsJ">voilk Discord</a></p>
+                                    <p><a href="https://discord.gg/8a9w7rGnXn">Voilk Discord</a></p>
                                 </div>
                             </div>
 
@@ -63,7 +63,7 @@ class Questions extends Component {
                         <div class="section-button clearfix text-center">
                             <h4>Your answer not here? for more answers Click below..</h4>
                             <br />
-                            <a href="https://discord.gg/QNryJsJ" class="btn btn-transparent">Chat With Us</a>
+                            <a href="https://discord.gg/8a9w7rGnXn" class="btn btn-transparent">Chat With Us</a>
                         </div>
                     </div>
                 </section>
