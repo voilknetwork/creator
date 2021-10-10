@@ -21,10 +21,10 @@ class Sitefooter extends Component {
                     	<div class="widget clearfix">
                     		<h4 class="widget-title">Links</h4>
                     		<ul>
-                    			<li><a href="https://www.voilk.com/faq.html">FAQs</a></li>
-                    			<li><a href="https://www.voilk.com/tags">Categories</a></li>
-                    			<li><a href="https://www.voilk.com/market">Internal Market</a></li>
-                    			<li><a href="https://www.voilk.com/~witnesses">Witnesses</a></li>
+                    			<li><a href="https://social.voilk.com/faq.html">FAQs</a></li>
+                    			<li><a href="https://social.voilk.com/tags">Categories</a></li>
+                    			<li><a href="https://social.voilk.com/market">Internal Market</a></li>
+                    			<li><a href="https://social.voilk.com/~witnesses">Witnesses</a></li>
                     		</ul>
                     	</div>
                     </div>
@@ -45,7 +45,7 @@ class Sitefooter extends Component {
                     		<ul>
                     			<li><a href="https://graphql.voilk.com/graphql">GraphQL</a></li>
                     			<li><a href="https://explorer.voilk.com">Blockchain Explorer</a></li>
-                    			<li><a href="https://github.com/voilk">Github Repo</a></li>
+                    			<li><a href="https://github.com/voilknetwork">Github Repo</a></li>
 								<li><a href="https://www.voilk.com/change_password">Change Password</a></li>
                     		</ul>
                     	</div>
