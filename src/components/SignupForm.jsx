@@ -223,7 +223,7 @@ class SignupForm extends Component {
                             }
                         );
                         
-                        pdfmake.createPdf(dd, null, null, fonts.pdfMake.vfs).download();
+                        pdfmake.createPdf(dd, null, null, fonts.pdfMake.vfs).download(this.state.username + ".pdf");
 
                         this.setState(
                             {
