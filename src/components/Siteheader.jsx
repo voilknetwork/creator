@@ -118,7 +118,7 @@ class Siteheader extends Component {
                       <a href="/faq">FAQs</a>
                     </li>
                     <li>
-                      <a href="https://voilk.com/privacy.html">Privacy Policy</a>
+                      <a href="https://social.voilk.com/privacy.html">Privacy Policy</a>
                     </li>
                   </ul>
                 </div>
