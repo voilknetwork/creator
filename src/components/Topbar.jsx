@@ -12,7 +12,7 @@ class Topbar extends Component {
                 <nav className="topbar-menu">
                   <ul className="list-inline">
                     <li>
-                      <a className="btn btn-transparent" href="https://discord.gg/8a9w7rGnXn">
+                      <a className="btn btn-transparent" href="https://discord.gg/SjyCp6TYYN">
                         Live Chat
                       </a>
                     </li>

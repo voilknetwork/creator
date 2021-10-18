@@ -55,7 +55,7 @@ class Sitefooter extends Component {
                     	<div class="widget clearfix">
                     		<h4 class="widget-title">Talk to us</h4>
                     		<ul>
-                    			<li><a href="https://discord.gg/8a9w7rGnXn">Discord</a></li>
+                    			<li><a href="https://discord.gg/SjyCp6TYYN">Discord</a></li>
                     		</ul>
                     	</div>
                     </div>
