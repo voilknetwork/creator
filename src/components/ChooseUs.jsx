@@ -124,7 +124,7 @@ class ChooseUs extends Component {
 							<div class="service-details">
 		<h4><a href="#" title="">{text.offerings_2[0].title}</a></h4>
 								<p>{text.offerings_2[0].info}</p>
-								<a href="https://www.voilk.com/login.html" class="readmore">Create Posts</a>
+								<a href="https://voilk.com" class="readmore">Create Posts</a>
 							</div>
 						</div>
 					</div>
@@ -148,7 +148,7 @@ class ChooseUs extends Component {
 							<div class="service-details">
 								<h4><a href="#" title="">{text.offerings_2[2].title}</a></h4>
 								<p>{text.offerings_2[2].info}</p>
-								<a href="https://www.voilk.com/login.html" class="readmore">Login and VOTE</a>
+								<a href="https://voilk.com" class="readmore">Login and VOTE</a>
 							</div>
 						</div>
 					</div>

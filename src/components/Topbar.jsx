@@ -30,7 +30,7 @@ class Topbar extends Component {
                       <i className="fa fa-envelope" /> support@voilk.com
                     </li>
                     <li>
-                    <a className="btn btn-transparent" href="https://social.voilk.com/login.html">
+                    <a className="btn btn-transparent" href="https://voilk.com">
                         Login
                       </a>
                     </li>
