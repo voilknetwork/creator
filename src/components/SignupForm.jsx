@@ -304,6 +304,9 @@ class SignupForm extends Component {
                 <div class="section-title text-center">
                     
                     <p class="lead">You were invited by <strong color="red">{this.state.ref}</strong></p>
+                    <p>Type a username, in small english letters, when you generate an account, a PDF file downloads, which carries your account's passwords,
+                        Keep this file safe and secure.
+                    </p>
                 </div>
 
                 <div class="row">
