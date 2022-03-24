@@ -12,7 +12,7 @@ class Sitefooter extends Component {
                     	<div class="widget clearfix">
                     		<h4 class="widget-title">voilk</h4>
                     		<div class="newsletter-widget">
-                    			<p>Voilk is a content sharing platform, where your content is rewarded.</p>
+                    			<p>Voilk is a Caring Social Network, where you earn cryptocurrency called VOILK when you share content and get likes on it.</p>
 		                        
                     		</div>
                     	</div>
