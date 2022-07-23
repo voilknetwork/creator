@@ -304,8 +304,10 @@ class SignupForm extends Component {
                 <div class="section-title text-center">
                     
                     <p class="lead">You were invited by <strong color="red">{this.state.ref}</strong></p>
-                    <p>Type a username, in small english letters, when you generate an account, a PDF file downloads, which carries your account's passwords,
-                        Keep this file safe and secure.
+                    <p>Type a valid username, in small english letters and click check availability <br /> 
+                       <b>when you hit generate account button , a PDF file downloads automatically</b><br /> 
+                       which carries your account's passwords, <br /> 
+                       make sure to keep this file safe and secure, <b style={{color: "red"}}> losing this file, will result in losing your account and your funds.</b>
                     </p>
                 </div>
 
