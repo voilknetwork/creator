@@ -1,6 +1,6 @@
 const text = {
     title: "Caring Social Network",
-    description: "Welcome to the first ever, open source, blockchain based, decentralized Social Network. Where can participate in the mining processs of VOILK cryptocurrency by creating content and getting likes on them",
+    description: "Welcome to the first ever, open source, blockchain based, decentralized Social Network. Where you can participate in the mining processs of VOILK cryptocurrency by creating content and getting likes on them",
     infopanel: [
         "1.Create a Post",
         "2.Get likes",
