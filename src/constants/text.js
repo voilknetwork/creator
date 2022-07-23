@@ -1,15 +1,18 @@
 const text = {
-    title: "Content Sharing Platform",
-    description: "a platform to share your content with the world.",
+    title: "Caring Social Network",
+    description: "Welcome to the first ever, open source, blockchain based, decentralized Social Network. Where can participate in mining processs of VOILK cryptocurrency by creating content and getting likes on them",
     infopanel: [
-        "Create a Post",
-        "Get likes",
-        "Get Shares",
-        "Cashout weekly"
+        "1.Create a Post",
+        "2.Get likes",
+        "3.Earn Money",
+        "4.Cashout"
     ],
     choose_us: [
         "What is voilk?", 
-        "voilk provides you a platform to share your content with the world."],
+        `Voilk is a decentral Social Network built on top of Voilk Blockchain, fueled by the VOILK and VSD
+        cryptocurrencies, comes with an explorer,
+        exchange market and an affiliates Network for
+        promoters`],
     offerings: [
         {
             title: "Create a Post",
@@ -21,35 +24,35 @@ const text = {
         },
         {
             title: "Get Rewards",
-            info:"Each like is worth some shares."
+            info:"Each like is worth some VOILK."
         },
         {
-            title: "Share Power",
+            title: "Power",
             info: "increases your like's value."
         },
         {
-            title: "exchange shares",
-            info: "Internal market lets you trade your Shares."
+            title: "Exchange Voilk",
+            info: "Internal market lets you trade your Voilk against VSD."
         },
         {
             title: "Withdraw",
-            info: "When you have at least 50$ worth shares."
+            info: "When you have at least 50 VSD worth VOILK."
         },
     ],
     mission: [
         "What is our Mission?", 
-        "Provide you the best tools and services to help you share the content easily.",
-        "" 
+        "Provide you the best ever Social Network, where you can participate in mining process of VOILK cryptocurrency.",
+        "Our Whitepaper: https://voilk.com/whitepaper.pdf" 
     ],
     mission_2: [
         "Sharing Content brings Rewards!",
-        "Create content and get people like your posts.",
+        "Create content and get people to like your posts.",
         "Rewards are ready to claim from your wallet in seven days."
     ],
     offerings_2: [
         {
             title: "Create a Post",
-            info: "Getting crypto rewards is as simple as creating a post and getting likes on it."
+            info: "Participating in mining process of VOILK cryptocurrency is as simple as creating a post and getting likes on it."
         },
         {
             title: "Like Posts",
@@ -63,8 +66,8 @@ const text = {
     tag_line: "Voilk's block reward is 0.501 VOILK and it is going to narrow down to 0.050 VOILK over the period of 20 Years.",
     mission_3: [
         "Every 3 seconds a witness mines 0.501 new VOILKs",
-        "90% of these mined coins are added to community's reward pool.",
-        "The community with their likes, decides who gets the most of it."
+        "85% of these mined coins are added to community's reward pool.",
+        "The community(YOU and people like You) with their likes, decides who gets the most of it."
     ],
     offerings_3: [
         {
