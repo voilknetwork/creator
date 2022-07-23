@@ -136,7 +136,7 @@ class ChooseUs extends Component {
 							<div class="service-details">
 								<h4><a href="#" title="">{text.offerings_2[1].title}</a></h4>
 								<p>{text.offerings_2[1].info}</p>
-								<a href="https://invest.voilk.com" class="readmore">Invest Now</a>
+								<a href="https://voilk.com/read/trending" class="readmore">Read Now</a>
 							</div>
 						</div>
 					</div>

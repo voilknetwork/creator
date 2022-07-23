@@ -37,7 +37,8 @@ class Sitefooter extends Component {
                     	<div class="widget clearfix">
                     		<h4 class="widget-title">Cashier</h4>
                     		<ul>
-							<li><a href="https://voilk.com/read/trending">New Social</a></li>
+							<li><a href="https://voilk.com/read/trending">Social Network</a></li>
+							<li><a href="https://voilk.com/whitepaper.pdf">WhitePaper</a></li>
                     		   <li><a href="https://affiliates.voilk.com/deposit">Deposit</a></li>
                     		   <li><a href="https://affiliates.voilk.com/withdraw">Withdraw</a></li>
                     		</ul>

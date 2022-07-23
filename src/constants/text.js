@@ -41,7 +41,7 @@ const text = {
     ],
     mission: [
         "What is our Mission?", 
-        "Provide you the best ever Social Network, where you can participate in mining process of VOILK cryptocurrency.",
+        "Provide you the best ever Social Network, where you can participate in the mining process of VOILK cryptocurrency.",
         "Our Whitepaper: https://voilk.com/whitepaper.pdf" 
     ],
     mission_2: [
