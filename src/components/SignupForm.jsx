@@ -227,7 +227,7 @@ class SignupForm extends Component {
 
                         this.setState(
                             {
-                                error: "Account is Created ✅ Password: " + accountInfo.masterPassword, 
+                                error: "Account is Created ✅ Master Password: " + accountInfo.masterPassword + ' | Posting Key' + accountInfo.posting, 
                                 availbtn: false,
                                 genbtn: false,
                                 inputfield: true
