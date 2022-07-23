@@ -6,7 +6,7 @@ class LargeSearch extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: "@voilk"
+      value: "voilk"
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -18,9 +18,9 @@ class LargeSearch extends Component {
   }
   handleSubmit(event) {
     if (this.state.value[0] === "@") {
-      window.location = `https://www.voilk.com/${this.state.value}`;
+      window.location = `https://voilk.com/search/${this.state.value}`;
     } else {
-      window.location = `https://www.voilk.com/${this.state.value}`;
+      window.location = `https://voilk.com/search/${this.state.value}`;
     }
     event.preventDefault();
   }
