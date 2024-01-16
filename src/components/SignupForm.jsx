@@ -317,6 +317,7 @@ class SignupForm extends Component {
                             <input 
                                 type="text" 
                                 class="form-control" 
+                                autocapitalize="none"
                                 placeholder="type your desired username"
                                 onChange={ this.handlechange } 
                                 disabled= {this.state.inputfield} />
